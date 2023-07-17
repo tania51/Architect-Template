@@ -33,7 +33,7 @@ body {
     display: flex;
 }
 .header-content ul li {
-    margin-left: 30px;
+    margin-right: 30px;
     list-style: none;
 }
 .header-content ul li a {
@@ -61,7 +61,7 @@ body {
     color: var(--primary-color);
     font-weight: var(--title-weight);
 }
-.basic-content p {
+.basic-description {
     color: var(--secondary-color);
     line-height: 26px;
 }
@@ -79,4 +79,65 @@ body {
     width: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
+}
+
+/*team section starts here */
+.main-container {
+    padding: 50px 240px;
+}
+.team-container {
+    display: flex;
+    align-items: center;
+}
+.team-img-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.50rem;
+}
+.team-content {
+    padding-left: 4.75rem;
+}
+.team-title {
+    color: var(--primary-color);
+    font-size: var(--primary-font);
+    font-weight: var(--title-weight);
+}
+.gray-title {
+    color: var(--secondary-color);
+}
+.yellow-title {
+    color: #FF900E;
+}
+
+
+
+
+
+
+
+/* media query for mobile device*/
+@media screen and (max-width: 768px) {
+    .header-content,
+    .banner-container,
+    .main-container
+    {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .header-content
+    {
+        flex-direction: column;
+    }
+    .team-container {
+        flex-direction: column-reverse;
+    }
+    .team-content {
+        padding-bottom: 30px;
+    }
+    .header-title {
+        text-align: center;
+    }
+    .team-img-content {
+        grid-template-columns: 1fr;
+    }
 }
