@@ -1,0 +1,82 @@
+/* google fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Work+Sans:wght@400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+:root {
+    --primary-color: #131313;
+    --secondary-color: #727272;
+    --btn-bg-color: #FF900E;
+    --btn-font-color: #fff;
+    --primary-font: 3rem;
+    --secondary-font: 1.25rem;
+    --title-weight: 700;
+    --secondary-weight: 600;
+}
+
+
+
+.header-container {
+    background: rgba(255, 144, 14, 0.10);
+}
+.header-content {
+    padding: 50px 228px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-content ul {
+    display: flex;
+}
+.header-content ul li {
+    margin-left: 30px;
+    list-style: none;
+}
+.header-content ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #424242;
+}
+.header-title {
+    color: var(--primary-color);
+    font-size: var(--primary-font);
+    font-weight: var(--title-weight);
+}
+/* banner section */
+.banner-container {
+    padding-left: 240px;
+    padding-right: 240px;
+}
+.basic-content {
+    max-width: 862px;
+    margin: 0 auto;
+    text-align: center;
+}
+.basic-content h1 {
+    font-size: 4rem;
+    color: var(--primary-color);
+    font-weight: var(--title-weight);
+}
+.basic-content p {
+    color: var(--secondary-color);
+    line-height: 26px;
+}
+.btn {
+    background-color: var(--btn-bg-color);
+    color: var(--btn-font-color);
+    padding: 20px 24px;
+    font-size: var(--secondary-font);
+    font-weight: var(--secondary-weight);
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.banner-container img {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
